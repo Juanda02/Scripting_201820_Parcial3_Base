@@ -1,0 +1,18 @@
+Feedback
+
+Examen (0.3/5.0)
+ * Una vez un Ai se vuelve 'tagged' y decide perseguir al jugador, ignora otros AI más cercanos.
+ * Ninguno de los actores usa BT. Creí que me habías dicho que cumpliste el enunciado por tu lado; no que hiciste una cosa completamente diferente al mismo. Si bien el entregable es funcional respecto al prototipo propuesto, no puedo encontrar implementación que satisfaga los requisitos de diseño del eneunciado. El examen no era hacer un juego de cogidas y ya; sino hacerlo cumpliendo los requisitos listados.
+ * Si bien puedo configurar el tiempo de juego, se creó una entidad completa para esto. Por qué? (0.3)
+ * No puedo configurar la cantidad de enemigos a través del GameController.
+ * Nada de los BT está implementado.
+ * No parece haber un contador para verificar cuántas veces cada actor ha sido 'tagged'.
+
+Bonificación (0.0/0.5)
+ * Está la implementación, pero no se computa porque la entrega no satisface el puntaje mínimo del enunciado.
+Compensación : 1.0
+Reducción por no subir bien a GitHub: -0.5
+
+Al final nunca supe por qué hubo necesidad de hacer otra carpeta de Assets.
+
+Total: 0.8 / 5.0
