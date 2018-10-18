@@ -1,18 +1,38 @@
 Feedback
 
+***** ORIGINAL
 Examen (0.3/5.0)
- * Una vez un Ai se vuelve 'tagged' y decide perseguir al jugador, ignora otros AI m�s cercanos.
- * Ninguno de los actores usa BT. Cre� que me hab�as dicho que cumpliste el enunciado por tu lado; no que hiciste una cosa completamente diferente al mismo. Si bien el entregable es funcional respecto al prototipo propuesto, no puedo encontrar implementaci�n que satisfaga los requisitos de dise�o del eneunciado. El examen no era hacer un juego de cogidas y ya; sino hacerlo cumpliendo los requisitos listados.
- * Si bien puedo configurar el tiempo de juego, se cre� una entidad completa para esto. Por qu�? (0.3)
- * No puedo configurar la cantidad de enemigos a trav�s del GameController.
- * Nada de los BT est� implementado.
- * No parece haber un contador para verificar cu�ntas veces cada actor ha sido 'tagged'.
+ * Una vez un Ai se vuelve 'tagged' y decide perseguir al jugador, ignora otros AI más cercanos.
+ * Ninguno de los actores usa BT. Creí que me habías dicho que cumpliste el enunciado por tu lado; no que hiciste una cosa completamente diferente al mismo. Si bien el entregable es funcional respecto al prototipo propuesto, no puedo encontrar implementación que satisfaga los requisitos de diseño del eneunciado. El examen no era hacer un juego de cogidas y ya; sino hacerlo cumpliendo los requisitos listados.
+ * Si bien puedo configurar el tiempo de juego, se creó una entidad completa para esto. Por qué? (0.3)
+ * No puedo configurar la cantidad de enemigos a través del GameController.
+ * Nada de los BT está implementado.
+ * No parece haber un contador para verificar cuántas veces cada actor ha sido 'tagged'.
+ *****
 
-Bonificaci�n (0.0/0.5)
- * Est� la implementaci�n, pero no se computa porque la entrega no satisface el puntaje m�nimo del enunciado.
-Compensaci�n : 1.0
-Reducci�n por no subir bien a GitHub: -0.5
+***** REVISIÓN
+Examen (1.8/ 5.0)
+ * Ninguno de los actores usa BT.
+ * Si bien puedo configurar el tiempo de juego, se creó una entidad completa para esto. Por qué? No la otorgo completa porque no tengo un argumento técnico para que esta funcionalidad no esté presente en el GameController como se pidió en el enunciado. (0.3)
+ * No puedo configurar la cantidad de enemigos a través del GameController dado, pero sí a través del GameManager. Nuevamente, por qué la necesidad de crear una nueva entidad para esto? Adicionalmente, la implementación entregada me obliga a arrastrar a mano los prefabs de los enemigos. Misma razón de arriba para no otorgarla completamente. (0.3)
+ * Nada de los BT está implementado.
+ * Técnicamente hablando no se satisface que "cada jugador tiene un puntaje que indica cuántas veces ha sido el perseguidor". Aunque la solución obvia era agregarlo al ActorController, vos te pusiste a manipular un arreglo; lo cual es válido, pero inconveniente. Adicionalmente, si cambio el número de jugadores también debo manipular a mano el tamaño de ese arreglo. Esta es la razón de por qué se pidió que cada jugador tuviera el puntaje; en vez de tener un puntaje por cada jugador. En OOP cuando decimos "un objeto tiene...", estamos indicando que esa cosa es potencialmente un atributo del objeto mencionado (0.3)
+ * GameController no se encarga de verificar quién fue el último 'tagged', pero sí GameManager. Una vez más, qué impedía hacer esto en GameController? (0.4)
+ * No puedo valorar completamente que el AI no persiga al anterior 'tagged', puesto que el enunciado pide explícitamente la validación en el nodo 'GetNearestTarget', y la propuesta entregada no implementó ese nodo, ni nada de BTs. Nuevamente, no hay una razón técnica para entregar algo diferente a las restricciones dadas (0.5)
+ * Confirmado: Cuando un AI decide su objetivo, no lo cambia hasta que lo alcanza; y por esto, el AI ignorará si en algún momento otro jugador está más cerca de él que su objetivo original.
 
-Al final nunca supe por qu� hubo necesidad de hacer otra carpeta de Assets.
+*****
 
-Total: 0.8 / 5.0
+Bonificación (0.0/0.5)
+ * Está la implementación, pero no se computa porque la entrega no satisface el puntaje mínimo del enunciado.
+Compensación : 1.0
+Reducción por no subir bien a GitHub: -0.5
+
+Al final nunca supe por qué hubo necesidad de hacer otra carpeta de Assets.
+
+Total: 2.3 / 5.0
+
+
+
+
+
